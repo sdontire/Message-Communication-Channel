@@ -1,0 +1,45 @@
+SNEHA REDDY DONTIREDDY
+740 Westcott st, Syracuse, NY 13210|315-380-0886|sdontire@syr.edu | https://www.linkedin.com/in/sdontireddy 
+
+EDUCATION
+Syracuse University, Syracuse, NY
+L.C. Smith College of Engineering and Computer Science                                                                                                                      
+M.S., Computer Engineering (Dec 2015)
+GPA: 3.3
+VR Siddhartha Engineering College, Vijayawada, India                                                                                                      
+Bachelor of Technology, Computer Science and Engineering (June 2013)
+GPA: 3.7
+
+RELATED COURSEWORK 
+Graduate: Advanced System Programming, Internet Programming, Database Management, Advanced Data Structures, Software Modeling & Analysis, Advanced Computer Architecture 
+Current: Object oriented language, Software Engineering, Introduction to cryptography
+
+TECHNICAL SKILLS
+Languages: C, C++, Java, C# 
+Operating Systems: Windows, Linux
+Database Software: Oracle, MySQL
+Web Technologies: HTML, CSS, JavaScript
+Application Software: Microsoft Office, MS Visual Studio, Visio, SQL Server
+Other: XML, UML
+
+ACADEMIC PROJECTS:
+SYRACUSE UNIVERSITY TOUR: 
+•	Designed a website tour of Syracuse University. Used Google Maps that shows the viewer’s current location relative to Quad center.
+•	 File upload and deletion facilities through a Web API that is hosted on the site server and communicates with remote desktop clients, also developed as part of this project. This service requires authentication as a member of an administrator role, defined by the site. 
+•	Server side software built with ASP.Net MVC and ASP.NET WebApi. Used SQL Server to manage User login information and Tour images and description.
+CODE ANALYSER:
+•	Developed a program for analysis of C# code. The analyzer, given a set of file references, finds all the types, their members, and relationships with other types. 
+•	Further, the analyzer constructs two metrics for each member function: its size in lines of code, and complexity defined as the number of elements in its scope tree.
+•	 The purpose of this code analysis is to find functions that may need attention because of their size and/or complexity. A secondary purpose is to help developers get a quick understanding of the structure of a set of code.
+
+LEADERSHIP
+•	Class representative of 80 students for four years in Engineering college
+•	Computer Science department representative of 140 students in college-level events.
+•	Team leader for undergraduate final project.
+
+ACHIEVEMENTS
+•	Member of winning team of “SPARK 2015” competition organized by O’Brien and Gere.
+•	Team Leader of the team which designed 3 games and hacking presentation in Dr. Nelson Ying Tri Region Science and Engineering Fair.
+•	Core member of Service Wing of Siddhartha Engineering College (SWOSEC).
+•	Team Leader of website designing team for INFINITO’13: Intra-department techno cultural event.
+•	Member of ASSET (Association of Siddhartha System Engineers and Technocrats).

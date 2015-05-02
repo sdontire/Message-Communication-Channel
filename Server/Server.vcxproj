@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AC1D871-0F10-419F-B3A3-4DD65D80E86C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Server</RootNamespace>
+    <ProjectName>ServerExecutive</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ApplicationHelpers\AppHelpers.cpp" />
+    <ClCompile Include="..\BlockingQueue\BlockingQueue.cpp" />
+    <ClCompile Include="..\Display\Display.cpp" />
+    <ClCompile Include="..\FileSystem\FileSystem.cpp" />
+    <ClCompile Include="..\Message\Message.cpp" />
+    <ClCompile Include="..\Receiver\Receiver.cpp" />
+    <ClCompile Include="..\Sender\Sender.cpp" />
+    <ClCompile Include="..\Sockets\Sockets.cpp" />
+    <ClCompile Include="ServerTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ApplicationHelpers\AppHelpers.h" />
+    <ClInclude Include="..\BlockingQueue\BlockingQueue.h" />
+    <ClInclude Include="..\Display\Display.h" />
+    <ClInclude Include="..\FileSystem\FileSystem.h" />
+    <ClInclude Include="..\Message\Message.h" />
+    <ClInclude Include="..\Receiver\Receiver.h" />
+    <ClInclude Include="..\Sender\Sender.h" />
+    <ClInclude Include="..\Sockets\Sockets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationHelpers\ApplicationHelpers.vcxproj">
+      <Project>{dda81122-4cbe-4985-928e-0aba6cbd160a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BlockingQueue\BlockingQueue.vcxproj">
+      <Project>{01e5da4c-419d-4793-bfe7-c647fdd29b88}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Display\Display.vcxproj">
+      <Project>{02feec9d-41d1-42e3-99c7-cd7bdcee8274}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Receiver\Receiver.vcxproj">
+      <Project>{3ec7306f-fd03-43d8-92da-1fa3ef570788}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sender\Sender.vcxproj">
+      <Project>{4b618fdd-8c60-4f91-91da-1420a783f3b7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sockets\Sockets.vcxproj">
+      <Project>{ca3129b8-1bf4-44c9-b116-53ec72d0bccb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Threads\Threads.vcxproj">
+      <Project>{57d82c34-d9af-436f-af78-0b021c66cb8e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsHelpers\zWindowsHelpers.vcxproj">
+      <Project>{3407bbc5-5bc7-4bd7-860d-cbc24715737b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
